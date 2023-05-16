@@ -1,0 +1,299 @@
+html {
+	/* esto se usa para que el scrol de pagina sea suave al aplicar un id a un link para que te redireccione a un sitio de la misma pagina */
+	font-size: 62.5%;
+
+	scroll-behavior: smooth;
+
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 2;
+	/* background-color: #ebebeb; */
+	background-color: rgba(149, 184, 195, 0.983);
+	font-family: "Raleway", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* REUSABLES */
+.contenedor {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* CONTENIDO */
+
+.contenedor-nav {
+	box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.395);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: white;
+	height: 6rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 0.1rem solid rgba(0, 0, 0, 0.234);
+}
+
+#logo {
+	font-weight: bold;
+	background-color: rgb(200, 198, 198);
+	border-radius: 20rem;
+	display: flex;
+	width: 8rem;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo strong {
+	color: rgba(21, 165, 209, 0.983);
+	font-size: 2.7rem;
+}
+
+#logo:hover {
+	color: black;
+	text-transform: none;
+}
+
+.navegacion {
+	display: flex;
+}
+
+.contenedor-nav a {
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+	width: 15rem;
+	transition: color, 0.1s;
+	margin-left: 1rem;
+	border-radius: 1rem;
+}
+
+.contenedor-nav a:hover {
+	color: whitesmoke;
+	font-size: 2rem;
+	background-color: rgb(89, 85, 85);
+	border-radius: 1rem;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 10rem;
+	padding: 0 0 0rem 0;
+	margin: 0rem;
+	color: white;
+}
+
+span {
+	font-size: 12rem;
+	color: rgb(139, 139, 151);
+	color: rgba(18, 149, 188, 0.983);
+}
+
+.hero {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 40%, transparent 60%, transparent 100%), url(../imgs/fotoss.avif);
+	height: 50rem;
+	/* max-width: 120rem; */
+	margin: 6rem auto 5rem auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.395);
+}
+
+.banner {
+	max-width: 160rem;
+	margin: 0 auto;
+}
+
+.caja-titulo {
+	display: flex;
+	padding-top: 2rem;
+	height: 25rem;
+}
+
+.photo {
+	color: white;
+	margin-top: 10rem;
+}
+
+a.btn-galeria {
+	color: rgb(255, 255, 255);
+	width: 30rem;
+	border: 1px solid rgb(255, 255, 255);
+	border-radius: 2rem;
+	font-size: 2rem;
+	margin-left: 5rem;
+	display: block;
+	text-align: center;
+	background-color: rgb(139, 139, 151, 0.4);
+}
+
+.btn-galeria:hover {
+	background-color: rgba(21, 165, 209, 0.789);
+	text-transform: uppercase;
+	transition: color, 0.2s;
+}
+
+.hero-parrafo {
+	color: white;
+	margin: 0 0 5rem 4rem;
+	font-size: 3rem;
+}
+
+.nuestros-productos h2 {
+	font-size: 7rem;
+	text-align: center;
+	margin-top: 0;
+}
+
+.nuestros-productos {
+	background-color: #ebebeb;
+	padding: 5rem;
+	border-radius: 1rem;
+}
+
+.servicio {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 5rem;
+	background-color: white;
+	padding: 5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.395);
+}
+
+.servicio img {
+	max-width: 100%;
+	display: block;
+	width: 50rem;
+	border-radius: 0.5rem;
+	box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.395);
+}
+
+.servicio img:hover {
+	transform: scale(1.08);
+	transition: 0.2s;
+}
+
+.contenedor-descripcion-productos {
+	margin: auto;
+	color: black;
+	width: 40rem;
+}
+
+.contenedor-descripcion-productos h3 {
+	font-size: 5rem;
+	margin: 0;
+}
+
+.descripcion-servicio {
+	font-size: 2.2rem;
+}
+
+.precio {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.btn-galeria-servicios {
+	background-color: #ebebeb;
+	height: 4rem;
+	border-radius: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 20rem;
+	margin: 5rem auto 3rem auto;
+	border: 0.1rem solid rgba(0, 0, 0, 0.171);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-galeria-servicios:hover {
+	background-color: rgb(107, 185, 241);
+	border-radius: 2rem;
+	transition: color, 0.2s ease;
+	color: white;
+	font-size: 1.9rem;
+	box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.395);
+}
+
+.btn-loquiero {
+	background-color: rgba(107, 185, 241, 0.516);
+	border-radius: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 5rem;
+	border: 0.1rem solid rgba(0, 0, 0, 0.171);
+}
+
+.btn-loquiero:hover {
+	background-color: rgb(107, 185, 241);
+	box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.395);
+	color: white;
+	transition: color, 0.2s ease;
+	background-color: rgba(21, 165, 209, 0.983);
+	font-size: 2.5rem;
+}
+
+.contenedor-footer {
+	display: flex;
+	margin-top: 5rem;
+	justify-content: space-evenly;
+	/* background-color: #afacac; */
+	background-color: white;
+	padding: 2rem 0;
+	flex-wrap: wrap;
+	box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.395);
+}
+
+.contenedor-footer a {
+	font-size: 1.6rem;
+	display: block;
+	width: 20rem;
+	margin-bottom: 2rem;
+	transition: color, 0.1s;
+}
+
+.contenedor-footer a:hover {
+	color: whitesmoke;
+	font-size: 1.6rem;
+	background-color: rgb(89, 85, 85);
+	border-radius: 1rem;
+	text-transform: uppercase;
+}
+
+.copyright {
+	border-bottom: 0.1rem solid rgba(0, 0, 0, 0.244);
+	background-color: rgb(255, 255, 255);
+	margin: 0;
+	padding-bottom: 2rem;
+}
+
+p span {
+	font-size: 20px;
+	color: rgba(21, 165, 209, 0.983);
+	font-weight: bold;
+}
